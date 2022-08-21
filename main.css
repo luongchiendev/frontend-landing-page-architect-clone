@@ -1,0 +1,301 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* navbar css & reponsive */
+/* base  */
+.top {
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    width: 100%;
+    height: 60px;
+    letter-spacing: 4px;
+    position: fixed;
+    z-index: 1;
+}
+
+.w3-navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px !important;
+    justify-content: space-between;
+}
+
+.w3-header-btn a {
+    text-decoration: none;
+    color: #000;
+    padding: 8px 16px;
+}
+
+.w3-header-btn a:hover {
+    background-color: #ccc;
+}
+
+/* desktop */
+@media screen and (min-width: 601px) {
+    .w3-nav-right {
+        display: flex;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+    .w3-nav-right {
+        display: none !important;
+    }
+}
+
+/* header css & reponsive */
+/* base */
+.header {
+    position: relative;
+}
+
+.header-img {
+    max-width: 1500px;
+    position: relative;
+}
+
+.header-img img {
+    width: 1500px;
+
+}
+
+.w3-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-display-middle {
+    color: #fff;
+    letter-spacing: 4px;
+}
+
+.sub-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-display-middle .no-hide {
+    background-color: #000;
+    opacity: 0.75;
+    padding: 8px 16px;
+}
+
+/* desktop */
+@media screen and (min-width: 601px) {}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+    .hide-small {
+        display: none;
+    }
+
+    .sub-header {
+        margin-top: 16px;
+    }
+}
+
+/* content css & reponsive */
+/* base */
+.w3-content {
+    max-width: 1564px;
+}
+
+.projects {
+    padding: 32px;
+
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 300;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f1f1f1;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.projects-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 32px;
+}
+
+.projects-content-img img {
+
+    width: 100%;
+}
+
+.projects-content-img {
+    width: 100%;
+    position: relative;
+}
+
+.projects-container {
+    display: flex;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+.display-in-img{
+    position: absolute;
+    top: 0;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+}
+
+/* desktop */
+@media screen and (min-width: 993px) {
+    .projects-container {
+        width: 24%;
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 992px) {
+    .projects-container {
+        width: 50%;
+        
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 601px) {
+    .projects-container {
+        width: 100%;
+    }
+}
+/* about css & reponsive */
+/* base */
+.about-contact{
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    filter: grayscale(75%);
+    flex-wrap: wrap;
+}
+.about-contact h3{
+    border: none;
+    margin: 10px 0;
+}
+.info-contact{
+    width: 100%;
+    padding: 0 8px;
+}
+.info-contact img{
+    width: 100%;
+}
+.info-contact .w3-p-opacity{
+    opacity: 0.60;
+    margin: 5px 0;
+}
+.info-contact .w3-p-contact{
+    margin: 15px 0;
+}
+.contact-btn{
+    background-color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+}
+.contact-btn a{
+    text-decoration: none;
+    color: #000;
+}
+.contact-btn:hover{
+    background-color: #ccc;
+}
+.container-about{
+    width: 100%;
+}
+/* desktop */
+@media screen and (min-width: 993px) {
+    .container-about {
+        width:25%;
+
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 992px) {
+    .container-about {
+        width: 50%;
+        margin-bottom: 32px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 601px) {
+    .container-about {
+        width: 100%;
+    }
+}
+/* Contact css & reponsive */
+/* Base */
+.w3-input{
+    width: 100%;
+    padding: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: block;
+}
+.w3-contact-border{
+    border: 1px solid #ccc !important;
+}
+.w3-contact-button{
+    background-color: #000;
+    color: #fff;
+    padding: 16px 16px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.w3-contact-button:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.img-contact{
+    padding: 0 32px;
+    width: 100%;
+}
+.img-contact img{
+    width: 100%;
+}
+.w3-footer{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    height: 64px;
+    text-align: center;
+    line-height: 64px;
+}
+.w3-footer a{
+    color: #fff;
+}
+.w3-footer a:hover{
+    color: #4CAF50!important;
+}
