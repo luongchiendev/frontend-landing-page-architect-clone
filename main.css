@@ -292,6 +292,7 @@ h3{
     height: 64px;
     text-align: center;
     line-height: 64px;
+    bottom: 0;
 }
 .w3-footer a{
     color: #fff;
